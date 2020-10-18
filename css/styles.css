@@ -132,14 +132,18 @@ ul {
   background-color: var(--accent-text-cl);
   font-weight: 700;
 }
-.page-title {
+.hero {
+  background-color: var(--background);
+}
+.hero-title {
+  color: var(--white);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36px;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--white);
+  background-color: var(--background);
 }
 .section-title {
   font-weight: 700;
@@ -159,9 +163,6 @@ ul {
 }
 .main-text {
   color: var(--grey);
-}
-.dark-bg {
-  background-color: var(--background);
 }
 .basement {
   background-color: var(--background);
