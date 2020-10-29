@@ -59,6 +59,15 @@
       url("../fonts/roboto/roboto-v20-latin_cyrillic-700.svg#Roboto")
       format("svg"); /* Legacy iOS */
 }
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
 :root {
   --main-text-cl: #212121;
@@ -81,6 +90,9 @@ body {
 .header {
   background-color: var(--white);
 }
+.header a {
+  display: inline-block;
+}
 ul {
   list-style: none;
 }
@@ -93,7 +105,12 @@ ul {
   font-style: normal;
   color: var(--main-text-cl);
 }
-.menu-nav {
+header .link-logo-h {
+  margin-left: 215px;
+  margin-top: 32px;
+  display: inline-block;
+}
+nav .link {
   font-weight: 500;
   line-height: 1.142px;
   letter-spacing: 0.02em;
@@ -101,6 +118,16 @@ ul {
   font-style: normal;
   color: inherit;
   background-color: var(--white);
+}
+.menu-studio {
+  margin-left: 453px;
+  margin-top: 40px;
+}
+.menu-portfolio {
+  margin-left: 552px;
+  }
+.menu-contacts {
+margin-left: 679px;
 }
 .e-address {
   font-weight: 500;
@@ -110,6 +137,8 @@ ul {
   color: inherit;
   text-decoration: none;
   color: var(--grey);
+  margin-left: 1078px;
+  margin-top: 40px;
 }
 .btn {
   font-family: inherit;
@@ -183,8 +212,11 @@ ul {
 .link-address:hover,
 .link-footer:focus,
 .link-address:focus,
-.menu-nav:hover,
-.menu-nav:focus,
+nav .link:hover,
+nav .link:focus,
+nav .studio,
+nav .portfolio,
+nav .contacts,
 .e-address:hover,
 .e-address:focus {
   color: var(--accent-text-cl);
